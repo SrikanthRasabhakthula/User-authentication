@@ -1,11 +1,17 @@
 User Authentication System in Django
+
 This Django-based user authentication system provides essential features for secure user management. It includes:
 
-User Registration – Allows new users to sign up by providing their details and setting up a password.
-Login – Authenticates users with their credentials and grants access to the system.
-Forgot Password – Enables users to reset their password by receiving a reset link via email.
-Change Password – Allows authenticated users to change their passwords for security purposes.
-Home Page – A protected dashboard or landing page accessible only after successful authentication.
+User Registration:
+Allows new users to sign up by providing their details and setting up a password.
+Login:
+Authenticates users with their credentials and grants access to the system.
+Forgot Password:
+Enables users to reset their password by receiving a reset link via email.
+Change Password:
+Allows authenticated users to change their passwords for security purposes.
+Home Page:
+A protected dashboard or landing page is accessible only after successful authentication.
 
 
 ![Registerimage](https://github.com/user-attachments/assets/87fc8153-246c-4ffb-a9d9-0f5ca4943f5c)

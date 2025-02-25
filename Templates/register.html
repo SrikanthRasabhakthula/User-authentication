@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Register{% endblock %}
+
+{% block content %}
+
+<section class="side">
+    <img src="{% static 'images/img.svg' %}" alt="Registration Illustration"><br>
+</section>
+
+<section class="main">
+    <div class="login-container">
+        <p class="title">Create Your Account</p>
+        <div class="separator"></div>
+
+        <!-- Display Django messages -->
+        {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                    <p class="error-message" style="color: red;">{{ message }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <form class="login-form" method="post">
+            {% csrf_token %}
+            
+            <div class="form-control">
+                <input type="text" placeholder="Username" name="username" required>
+                <i class="fas fa-user"></i>
+            </div>
+            
+            <div class="form-control">
+                <input type="email" placeholder="Email" name="email" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+            
+            <div class="form-control">
+                <input type="password" placeholder="Password" name="password1" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            
+            <div class="form-control">
+                <input type="password" placeholder="Re-enter Password" name="password2" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            
+            <button type="submit" class="submit">Register</button>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

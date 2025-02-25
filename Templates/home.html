@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+<div class="container">
+    <h1>Welcome to Home</h1>
+    <a href="{% url 'logout' %}" class="logout-btn" style="text-decoration: none;"><h3>Logout</h3></a>
+    <a href="{% url 'changepassword' %}" class="logout-btn" style="text-decoration: none;"><h3>Change Password</h3></a>
+</div>
+{% endblock %}
